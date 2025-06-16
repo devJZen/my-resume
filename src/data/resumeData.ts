@@ -8,7 +8,7 @@ export const resumeData: ResumeData = {
     email: 'quasar.joo@gmail.com',
     phone: '010-7253-9945',
     github: 'https://github.com/devJZen',
-    portfolio: 'https://www.your-portfolio.com',
+    portfolio: 'https://devjzen.netlify.app/',
     profileImage: '/profile.jpg',
   },
   summary:
