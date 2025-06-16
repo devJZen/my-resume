@@ -1,22 +1,14 @@
-# my-resume
+# 반갑습니다.
 
-This template should help get you started developing with Vue 3 in Vite.
+개발자 이주선 입니다.
 
-For a detailed explanation on how things work, check out the [VitePress docs](https://vitejs.dev/guide/features.html).
+## Developing with Vue
 
-## Recommended IDE Setup
+관심사인 Vue를 이용하여 작성한 이력서 입니다.
+잘 부탁드립니다.
 
-* [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (latest, currently v1.8.2) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, this is handled by the [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration](https://vitejs.dev/config/).
-
-## Project Setup
+## Dev with Me
 
 ```sh
-pnpm install
+npm run devJZen
+```
