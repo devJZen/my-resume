@@ -114,7 +114,7 @@ export const resumeData: ResumeData = {
     {
       id: 4,
       name: 'Actas MES 중소제조업 고도화 프로젝트',
-      duration: '2024.04 - 2024.08',
+      duration: '2023.04 - 2023.08',
       description:
         '주로 C++와 MSSQL, DevExpress를 사용하여 MES의 데이터를 조회하고 시각화하는 화면을 만들었습니다. Python과 Pandas를 사용하여 데이터 시각화 경험이 있습니다.',
       skillsUsed: ['C++', 'DevExpress', 'MSSQL', 'Python', 'Pandas', 'JMP'],
