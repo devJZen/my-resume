@@ -140,6 +140,15 @@ export const resumeData: ResumeData = {
     },
     {
       id: 7,
+      name: '보이스피싱 성문 인식 라벨링에 대하여',
+      duration: '2022.11',
+      description:
+        'AI를 활용한 보이스 피싱 방지라는 주제로 창업 아이디어 발표 대회에 출전했습니다. 발전하고 있는 AI로 인한 4차 산업 혁명에 대해 고민할 수 있는 시간이었으며, 국가를 상대로 사업 아이템을 구상할 수 있는 경험이었습니다.',
+      skillsUsed: ['PPT'],
+      link: 'https://www.notion.so/211110bbec59807c9329e58d579c1ecf?source=copy_link',
+    },
+    {
+      id: 8,
       name: '청각장애인을 위한 스마트 LED',
       duration: '2022.11',
       description:
@@ -148,7 +157,7 @@ export const resumeData: ResumeData = {
       link: 'https://www.notion.so/211110bbec59807c9329e58d579c1ecf?source=copy_link',
     },
     {
-      id: 8,
+      id: 9,
       name: 'OpenCV와 yolo4를 이용한 데이터 분석',
       duration: '2021.06',
       description:
