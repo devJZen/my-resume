@@ -135,7 +135,7 @@ export const resumeData: ResumeData = {
       duration: '2022.12 - 2023.03',
       description:
         'Java, Spring Boot, MSSQL, Mybatis를 사용하여 개발했습니다. 공개 repository를 첨부합니다.',
-      skillsUsed: ['JAVA', 'Spring Boot', 'HTML/CSS', 'Java Script', 'MSSQL', 'Mybatis'],
+      skillsUsed: ['Java', 'Spring Boot', 'HTML/CSS', 'JavaScript', 'MSSQL', 'Mybatis'],
       link: 'https://github.com/actaserp/werp',
     },
     {

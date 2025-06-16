@@ -34,7 +34,7 @@ ChartJS.register(Title, Tooltip, Legend, ArcElement)
 const skillFrequencies = calculateSkillFrequencies(resumeData)
 
 // 상위 N개 기술만 사용 (예: 상위 10개)
-const topSkills = computed(() => getTopNSkills(skillFrequencies, 10)) // N 값을 조정
+const topSkills = computed(() => getTopNSkills(skillFrequencies, 12)) // N 값을 조정
 
 // 차트 데이터 생성
 const chartData = computed<ChartData<'doughnut'>>(() => ({
@@ -53,6 +53,11 @@ const chartData = computed<ChartData<'doughnut'>>(() => ({
         '#e83e8c',
         '#6c757d',
         '#17a2b8',
+        '#f39c12',
+        '#8e44ad',
+        '#2ecc71',
+        '#e74c3c',
+        '#3498db',
       ],
       data: topSkills.value.map((s) => s.count),
     },
