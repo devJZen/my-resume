@@ -49,7 +49,7 @@ export const resumeData: ResumeData = {
         'HTML/CSS',
         'Flutter',
         'MSSQL',
-        'C++',
+        'C#',
         'DevExpress',
         'Python',
         'Pandas',
@@ -63,9 +63,9 @@ export const resumeData: ResumeData = {
       school: '경민대학교',
       major: '정보통신',
       degree: '전문학사',
-      duration: '2020.03 - 2022.02',
+      duration: '2020.03 - 2023.02',
       details:
-        "2021-2022 학회장 역임, 전공동아리 'CNC' 운영, 오픈소스 프로젝트 'TomTom' 개발, 졸업 프로젝트 '청각장애인을 위한 스마트 LED' 개발",
+        "2021-2022 학회장 역임, 전공동아리 'CNC' 운영,  오픈소스 프로젝트 'TomTom' 개발, 졸업 프로젝트 '청각장애인을 위한 스마트 LED' 개발",
     },
   ],
   skills: {
