@@ -74,7 +74,7 @@ export const resumeData: ResumeData = {
       'JavaScript',
       'TypeScript',
       'HTML/CSS',
-      'C++',
+      'C#',
       'Python',
       'MSSQL',
       'Oracle',
@@ -108,16 +108,16 @@ export const resumeData: ResumeData = {
       name: 'Actas 현대/기아 ANDON 모니터링 전환 사업',
       duration: '2023.09 - 2023.11',
       description:
-        'DevExpress를 이용하여 TRIM 공정의 ANDON 모니터링 화면을 개발했습니다. C++와 MSSQL을 사용하여 데이터를 조회하고 시각화하는 작업을 했습니다.',
-      skillsUsed: ['C++', 'DevExpress', 'MSSQL'],
+        'DevExpress를 이용하여 TRIM 공정의 ANDON 모니터링 화면을 개발했습니다. C#와 MSSQL을 사용하여 데이터를 조회하고 시각화하는 작업을 했습니다.',
+      skillsUsed: ['C#', 'DevExpress', 'MSSQL'],
     },
     {
       id: 4,
       name: 'Actas MES 중소제조업 고도화 프로젝트',
       duration: '2023.04 - 2023.08',
       description:
-        '주로 C++와 MSSQL, DevExpress를 사용하여 MES의 데이터를 조회하고 시각화하는 화면을 만들었습니다. Python과 Pandas를 사용하여 데이터 시각화 경험이 있습니다.',
-      skillsUsed: ['C++', 'DevExpress', 'MSSQL', 'Python', 'Pandas', 'JMP'],
+        '주로 C#와 MSSQL, DevExpress를 사용하여 MES의 데이터를 조회하고 시각화하는 화면을 만들었습니다. Python과 Pandas를 사용하여 데이터 시각화 경험이 있습니다.',
+      skillsUsed: ['C#', 'DevExpress', 'MSSQL', 'Python', 'Pandas', 'JMP'],
     },
 
     {
