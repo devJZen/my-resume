@@ -1,3 +1,12 @@
+export type SectionTitles = {
+  summary: string
+  experience: string
+  education: string
+  skills: string
+  skillFrequency: string
+  projects: string
+}
+
 export interface PersonalInfo {
   name: string
   age: number

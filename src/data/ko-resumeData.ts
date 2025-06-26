@@ -49,7 +49,7 @@ export const resumeData: ResumeData = {
         'HTML/CSS',
         'Flutter',
         'MSSQL',
-        'C++',
+        'C#/C++',
         'DevExpress',
         'Python',
         'Pandas',
@@ -74,7 +74,7 @@ export const resumeData: ResumeData = {
       'JavaScript',
       'TypeScript',
       'HTML/CSS',
-      'C++',
+      'C#/C++',
       'Python',
       'MSSQL',
       'Oracle',
@@ -91,7 +91,7 @@ export const resumeData: ResumeData = {
       name: '포트폴리오 웹사이트',
       duration: '2025.06',
       description:
-        '개인 작업물 및 기술 스택을 소개하는 반응형 웹사이트 입니다. Vue.js와 Vite를 사용하여 개발하고, Netlify로 배포했습니다.',
+        '개인 작업물 및 기술 스택을 소개하는 반응형 웹사이트 입니다. \n Vue.js와 Vite를 사용하여 초기로딩 시간 0.3초 달성했습니다. \n Netlify로 배포했습니다.',
       skillsUsed: ['Vue.js', 'Vite', 'HTML/CSS', 'TypeScript', 'Netlify'],
       link: 'https://github.com/devJZen/my-resume',
     },
@@ -108,16 +108,16 @@ export const resumeData: ResumeData = {
       name: 'Actas 현대/기아 ANDON 모니터링 전환 사업',
       duration: '2023.09 - 2023.11',
       description:
-        'DevExpress를 이용하여 TRIM 공정의 ANDON 모니터링 화면을 개발했습니다. C++와 MSSQL을 사용하여 데이터를 조회하고 시각화하는 작업을 했습니다.',
-      skillsUsed: ['C++', 'DevExpress', 'MSSQL'],
+        'DevExpress를 이용하여 TRIM 공정의 ANDON 모니터링 화면을 개발했습니다. C#/C++와 MSSQL을 사용하여 데이터를 조회하고 시각화하는 작업을 했습니다.',
+      skillsUsed: ['C#/C++', 'DevExpress', 'MSSQL'],
     },
     {
       id: 4,
       name: 'Actas MES 중소제조업 고도화 프로젝트',
       duration: '2023.04 - 2023.08',
       description:
-        '주로 C++와 MSSQL, DevExpress를 사용하여 MES의 데이터를 조회하고 시각화하는 화면을 만들었습니다. Python과 Pandas를 사용하여 데이터 시각화 경험이 있습니다.',
-      skillsUsed: ['C++', 'DevExpress', 'MSSQL', 'Python', 'Pandas', 'JMP'],
+        '주로 C#/C++와 MSSQL, DevExpress를 사용하여 MES의 데이터를 조회하고 시각화하는 화면을 만들었습니다. Python과 Pandas를 사용하여 데이터 시각화 경험이 있습니다.',
+      skillsUsed: ['C#/C++', 'DevExpress', 'MSSQL', 'Python', 'Pandas', 'JMP'],
     },
 
     {

@@ -25,7 +25,7 @@ import {
 import type { ChartOptions, ChartData } from 'chart.js'
 import SectionTitle from '../common/SectionTitle.vue'
 import { calculateSkillFrequencies, getTopNSkills } from '../../utils/skillCalculator'
-import { resumeData } from '../../data/resumeData' // resumeData 불러오기
+import { resumeData } from '../../data/ko-resumeData' // resumeData 불러오기
 
 // Chart.js 모듈 등록
 ChartJS.register(Title, Tooltip, Legend, ArcElement)

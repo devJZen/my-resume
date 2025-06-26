@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { resumeData } from './data/resumeData' // 데이터 불러오기
+import { useLanguageStore } from './stores/language' // 언어 스토어 임포트
+import { storeToRefs } from 'pinia' // Pinia ref 언래핑
 
 // 각 섹션 컴포넌트 불러오기
 import PersonalInfo from './components/resume/PersonalInfo.vue'
@@ -8,13 +9,25 @@ import ExperienceSection from './components/resume/ExperienceSection.vue'
 import EducationSection from './components/resume/EducationSection.vue'
 import SkillsSection from './components/resume/SkillsSection.vue'
 import SkillFrequencyChart from './components/resume/SkillFrequencyChart.vue'
-
 import ProjectSection from './components/resume/ProjectSection.vue'
+
+const languageStore = useLanguageStore()
+const { resumeData } = storeToRefs(languageStore) // resumeData를 반응형으로 가져옴
+
+// 현재 언어를 설정하는 함수
+const setLang = (lang: 'ko' | 'en') => {
+  languageStore.setLanguage(lang)
+}
 </script>
 
 <template>
   <div id="resume-container">
     <PersonalInfo :personalInfo="resumeData.personalInfo" />
+
+    <select v-model="languageStore.currentLanguage" class="language-dropdown">
+      <option value="ko">한국어</option>
+      <option value="en">English</option>
+    </select>
 
     <main class="resume-main-content">
       <SummarySection :summary="resumeData.summary" />
@@ -84,6 +97,15 @@ import ProjectSection from './components/resume/ProjectSection.vue'
   border-top: 1px solid #eee;
   color: #777;
   font-size: 0.85em;
+}
+.language-dropdown {
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 0.9em;
+  background-color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 /* 기본 링크 스타일 */

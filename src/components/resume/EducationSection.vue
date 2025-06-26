@@ -1,6 +1,6 @@
 <template>
   <section class="education-section">
-    <SectionTitle title="학력 사항" />
+    <SectionTitle :title="sectionTitles.education" />
 
     <div class="education-list">
       <div v-for="edu in education" :key="edu.id" class="education-item">
@@ -17,6 +17,10 @@
 import { defineProps } from 'vue'
 import SectionTitle from '../common/SectionTitle.vue' // SectionTitle 컴포넌트 불러오기
 import type { Education } from '../../types/indexData' // 정의된 Education 타입 불러오기
+import { useLanguageStore } from '../../stores/language' // 언어 스토어 임포트
+import { storeToRefs } from 'pinia'
+const languageStore = useLanguageStore()
+const { sectionTitles } = storeToRefs(languageStore)
 
 // Props 타입을 정의하고 적용합니다.
 interface EducationSectionProps {

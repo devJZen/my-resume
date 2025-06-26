@@ -1,6 +1,6 @@
 <template>
   <section class="experience-section">
-    <SectionTitle title="경력 기술서" />
+    <SectionTitle :title="sectionTitles.experience" />
     <div v-for="exp in experiences" :key="exp.id" class="experience-item">
       <h3 class="company-name">{{ exp.company }}</h3>
       <p class="position-duration">
@@ -25,6 +25,10 @@
 import { defineProps } from 'vue'
 import SectionTitle from '../common/SectionTitle.vue'
 import type { Experience } from '../../types/indexData'
+import { useLanguageStore } from '../../stores/language' // 언어 스토어 임포트
+import { storeToRefs } from 'pinia'
+const languageStore = useLanguageStore()
+const { sectionTitles } = storeToRefs(languageStore)
 
 interface ExperienceSectionProps {
   experiences: Experience[]
