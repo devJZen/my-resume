@@ -1,6 +1,6 @@
 <template>
   <section class="skill-frequency-chart-section">
-    <SectionTitle title="어떤 스킬을 자주 사용했을까?" />
+    <SectionTitle :title="sectionTitles.skillFrequency" />
     <div class="chart-container">
       <Doughnut
         :data="chartData"
@@ -26,6 +26,10 @@ import type { ChartOptions, ChartData } from 'chart.js'
 import SectionTitle from '../common/SectionTitle.vue'
 import { calculateSkillFrequencies, getTopNSkills } from '../../utils/skillCalculator'
 import { resumeData } from '../../data/ko-resumeData' // resumeData 불러오기
+import { useLanguageStore } from '../../stores/language' // 언어 스토어 임포트
+import { storeToRefs } from 'pinia'
+const languageStore = useLanguageStore()
+const { sectionTitles } = storeToRefs(languageStore)
 
 // Chart.js 모듈 등록
 ChartJS.register(Title, Tooltip, Legend, ArcElement)

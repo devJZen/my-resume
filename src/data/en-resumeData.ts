@@ -6,7 +6,6 @@ export const resumeData: ResumeData = {
     jobTitle: 'Full-Stack Developer',
     age: 26,
     email: 'quasar.joo@gmail.com',
-    phone: '+82 10-7253-9945',
     github: 'https://github.com/devJZen',
     portfolio: 'https://devjzen.netlify.app/',
     profileImage: '/profile.jpg',

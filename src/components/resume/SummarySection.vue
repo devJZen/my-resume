@@ -1,6 +1,6 @@
 <template>
   <section class="summary-section">
-    <SectionTitle title="노력하는 개발자" />
+    <SectionTitle :title="sectionTitles.summary" />
     <p class="summary-text">{{ summary }}</p>
   </section>
 </template>
@@ -8,12 +8,17 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 import SectionTitle from '../common/SectionTitle.vue' // SectionTitle 컴포넌트 불러오기
+import { useLanguageStore } from '../../stores/language'
+import { storeToRefs } from 'pinia'
 
 interface SummaryProps {
   summary: string
 }
 
 const props = defineProps<SummaryProps>()
+// Pinia 스토어에서 sectionTitles를 가져옴
+const languageStore = useLanguageStore()
+const { sectionTitles } = storeToRefs(languageStore)
 </script>
 
 <style scoped>

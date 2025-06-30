@@ -49,12 +49,26 @@ const setLang = (lang: 'ko' | 'en') => {
 </template>
 
 <style>
-/* src/App.vue 또는 src/style.css 에 포함 */
-#app {
-  font-family: 'Arial', sans-serif;
+/* -------------------------------------- */
+/* 1. 전역 스타일 및 모바일 기본 스타일 (Mobile-first) */
+/* -------------------------------------- */
+
+/* body 태그에 직접적인 스타일 적용 권장 */
+body {
+  font-family: 'Arial', sans-serif; /* 폰트 설정 */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+
+/* #app (전체 앱 컨테이너) */
+#app {
+  width: 100%;
+  max-width: 100vw; /* 뷰포트 너비를 넘지 않도록 */
   margin: 0;
   padding: 0;
   background-color: #f4f7f6;
@@ -67,8 +81,9 @@ const setLang = (lang: 'ko' | 'en') => {
 }
 
 #resume-container {
-  min-width: 900px;
-  width: 100%;
+  width: 100%; /* 모바일에서 화면 너비 100% 사용 */
+  min-width: 0; /* **모바일에서 최소 너비 제한 제거** (매우 중요!) */
+  max-width: none; /* **모바일에서 최대 너비 제한 제거** (매우 중요!) */
   background-color: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
@@ -78,6 +93,55 @@ const setLang = (lang: 'ko' | 'en') => {
   box-sizing: border-box;
 }
 
+.language-dropdown {
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 0.9em;
+  background-color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------- */
+/* 2. 데스크탑/태블릿용 미디어 쿼리 */
+/* -------------------------------------- */
+@media (min-width: 769px) {
+  /* 브레이크포인트를 900px보다 작은 769px 등으로 설정하는 것이 일반적 */
+  #app {
+    padding: 20px 0; /* 데스크탑 상하 여백 */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #resume-container {
+    max-width: 900px; /* 데스크탑 최대 너비 설정 */
+    min-width: 900px; /* 데스크탑 최소 너비 유지 */
+    width: 100%; /* 900px 이하면 100% (min-width와 함께 사용 시) */
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 20px; /* 좌우 여백 */
+    padding: 30px 40px;
+    box-sizing: border-box;
+  }
+
+  .language-dropdown {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 0.9em;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+}
+
+/* -------------------------------------- */
+/* 3. 공통 섹션 스타일 (대부분 기존 유지) */
+/* -------------------------------------- */
 .resume-main-content section {
   margin-bottom: 40px;
   padding-bottom: 20px;
@@ -97,15 +161,6 @@ const setLang = (lang: 'ko' | 'en') => {
   border-top: 1px solid #eee;
   color: #777;
   font-size: 0.85em;
-}
-.language-dropdown {
-  padding: 8px 12px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-  font-size: 0.9em;
-  background-color: white;
-  cursor: pointer;
-  margin-bottom: 20px;
 }
 
 /* 기본 링크 스타일 */

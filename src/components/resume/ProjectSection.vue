@@ -1,6 +1,6 @@
 <template>
   <section class="project-section">
-    <SectionTitle title="경험 프로젝트" />
+    <SectionTitle :title="sectionTitles.projects" />
 
     <div class="projects-list">
       <div v-for="project in projects" :key="project.id" class="project-item">
@@ -29,6 +29,10 @@
 import { defineProps } from 'vue'
 import SectionTitle from '../common/SectionTitle.vue' // SectionTitle 컴포넌트 불러오기
 import type { Project } from '../../types/indexData' // 정의된 Project 타입 불러오기
+import { useLanguageStore } from '../../stores/language' // 언어 스토어 임포트
+import { storeToRefs } from 'pinia'
+const languageStore = useLanguageStore()
+const { sectionTitles } = storeToRefs(languageStore)
 
 // Props 타입을 정의하고 적용합니다.
 interface ProjectSectionProps {

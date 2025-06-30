@@ -20,7 +20,6 @@
         <span class="icon">✉️</span>
         <a :href="'mailto:' + personalInfo.email" class="pulse-link">{{ personalInfo.email }}</a>
       </p>
-      <p v-if="personalInfo.phone"><span class="icon">📞</span> {{ personalInfo.phone }}</p>
       <p v-if="personalInfo.github">
         <span class="icon">🐙</span>
         <a :href="personalInfo.github" class="pulse-link" target="_blank" rel="noopener noreferrer">

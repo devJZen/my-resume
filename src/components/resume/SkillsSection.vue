@@ -1,6 +1,6 @@
 <template>
   <section class="skills-section">
-    <SectionTitle title="기술 스택" />
+    <SectionTitle :title="sectionTitles.skills" />
 
     <div class="skills-grid">
       <div v-if="skills.languages && skills.languages.length" class="skill-category">
@@ -38,12 +38,17 @@
 import { defineProps } from 'vue'
 import SectionTitle from '../common/SectionTitle.vue'
 import type { Skills } from '../../types/indexData' // Skills 타입 불러오기
+import { useLanguageStore } from '../../stores/language'
+import { storeToRefs } from 'pinia'
 
 interface SkillsSectionProps {
   skills: Skills
 }
 
 const props = defineProps<SkillsSectionProps>()
+// Pinia 스토어에서 sectionTitles를 가져옴
+const languageStore = useLanguageStore()
+const { sectionTitles } = storeToRefs(languageStore)
 </script>
 
 <style scoped>

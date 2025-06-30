@@ -12,7 +12,6 @@ export interface PersonalInfo {
   age: number
   jobTitle: string
   email: string
-  phone: string
   github: string
   portfolio: string
   profileImage: string
