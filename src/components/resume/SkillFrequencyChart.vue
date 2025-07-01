@@ -134,7 +134,7 @@ const chartOptions: ChartOptions<'doughnut'> = {
 /* 모바일 반응형 조정 */
 @media (max-width: 768px) {
   .chart-container {
-    max-width: 100%; /* 모바일에서 너비 조정 */
+    width: 90%; /* 모바일에서 너비 조정 */
   }
 }
 </style>

@@ -27,6 +27,7 @@ export const resumeData: ResumeData = {
         '유틸 단위테스트 작성',
         'AUIGrid를 사용하여 데이터 시각화',
         '환율 API 연동 및 데이터 처리',
+        '배치관리 API 개발',
       ],
       skillsUsed: ['Java', 'JavaScript', 'HTML/CSS', 'Oracle', 'SVN'],
     },
@@ -63,8 +64,12 @@ export const resumeData: ResumeData = {
       major: '정보통신',
       degree: '전문학사',
       duration: '2020.03 - 2023.02',
-      details:
-        "2021-2022 학회장 역임, 전공동아리 'CNC', '푸른꿈나무' 운영,  오픈소스 프로젝트 'TomTom' 개발, 졸업 프로젝트 '청각장애인을 위한 스마트 LED' 개발",
+      details: [
+        '2021-2022 학회장 역임',
+        "전공동아리 'CNC', '푸른꿈나무' 운영",
+        "오픈소스 프로젝트 'TomTom' 개발",
+        "졸업 프로젝트 '청각장애인을 위한 스마트 LED' 개발",
+      ],
     },
   ],
   skills: {
@@ -87,12 +92,12 @@ export const resumeData: ResumeData = {
   projects: [
     {
       id: 1,
-      name: '포트폴리오 웹사이트',
-      duration: '2025.06',
+      name: 'DevPrep',
+      duration: '2025.07',
       description:
-        '개인 작업물 및 기술 스택을 소개하는 반응형 웹사이트 입니다. \n Vue.js와 Vite를 사용하여 초기로딩 시간 0.3초 달성했습니다. \n Netlify로 배포했습니다.',
+        '개발 공부를 위해 제작한 웹사이트 입니다. 관심사를 질문과 답변으로 기억할 수 있게 만들었습니다. Vue.js와 Vite를 사용하여 개발하였으며, Netlify에 배포했습니다.',
       skillsUsed: ['Vue.js', 'Vite', 'HTML/CSS', 'TypeScript', 'Netlify'],
-      link: 'https://github.com/devJZen/my-resume',
+      link: 'https://devwithme.netlify.app/',
     },
     {
       id: 2,

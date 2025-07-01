@@ -32,7 +32,7 @@ export interface Education {
   major: string
   degree: string
   duration: string
-  details?: string // 추가 정보 (예: 졸업 프로젝트, 주요 과목 등)
+  details?: string[] // 추가 정보 (예: 졸업 프로젝트, 주요 과목 등)
 }
 
 export interface Skills {
