@@ -19,6 +19,7 @@ export interface PersonalInfo {
 
 export interface Experience {
   id: number
+  imageUrl?: string // 선택적: 회사 로고 이미지 URL
   company: string
   position: string
   duration: string

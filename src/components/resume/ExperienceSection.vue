@@ -7,6 +7,7 @@
         <span class="position">{{ exp.position }}</span> |
         <span class="duration">{{ exp.duration }}</span>
       </p>
+      <img v-if="exp.imageUrl" :src="exp.imageUrl" class="project-diagram" />
       <ul class="responsibilities-list">
         <li v-for="(desc, index) in exp.description" :key="index">{{ desc }}</li>
       </ul>

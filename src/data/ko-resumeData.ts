@@ -19,15 +19,15 @@ export const resumeData: ResumeData = {
       position: '풀스텍 개발자',
       duration: '2025.02 - 현재',
       description: [
-        'Flutter 기반 반응형 앱 서비스 유지보수',
-        'Spring Boot 레거시 프로젝트 마이그레이션',
-        'LogFactory를 롬복 Slf4j로 변경',
+        'object-c로 작성된 Flutter 기반 웹뷰 프로젝트 유지보수',
+        'Spring Boot+Java+Groovy+Gradle 조합의 레거시 프로젝트 마이그레이션',
+        '생성자 주입 방식의 LogFactory를 롬복 Slf4j로 변경',
         'RedisFactory를 LettuceFactory로 변경',
-        'Gradle 종속성 변경',
-        '유틸 단위테스트 작성',
+        'Gradle 종속성을 한꺼번에 관리할 수 있도록 변경',
+        'Junit5를 사용하여 유틸 단위테스트 작성',
         'AUIGrid를 사용하여 데이터 시각화',
-        '환율 API 연동 및 데이터 처리',
-        '배치관리 API 개발',
+        '실시간 환율 Open API 연동 및 데이터 처리',
+        '배치관리 API 개발 및 쿼리 최적화',
       ],
       skillsUsed: ['Java', 'JavaScript', 'HTML/CSS', 'Oracle', 'SVN'],
     },
@@ -37,11 +37,12 @@ export const resumeData: ResumeData = {
       position: '풀스텍 개발자',
       duration: '2022.12 - 2024.01',
       description: [
-        'Spring Boot, Flutter 기반 ERP 웹/앱 전환 사업 참여',
-        'Flutter를 사용한 android/ios 앱 개발',
+        'Spring Boot+Java, Flutter 조합의 ERP 웹/앱 전환 사업 참여',
+        'Swift를 사용한 ios 앱 개발 및 배포',
         'OneSignal을 사용한 푸시 알림 기능 구현',
         'MES 데이터를 Pandas, Tkinter를 사용하여 Win 애플리케이션 개발 및 시각화',
-        'MES 시스템 유지보수 및 기능 개선',
+        'MES 시스템 유지보수 및 DevExpress를 사용한 데이터 시각화, 프로시저 작성으로 쿼리 최적화',
+        'MES AI 고도화 사업을 위해 JMP CDAJ-L1에 준하는 기업실무과정 수강 ',
       ],
       skillsUsed: [
         'Java',
@@ -61,15 +62,11 @@ export const resumeData: ResumeData = {
     {
       id: 1,
       school: '경민대학교',
-      major: '정보통신',
+      major: '정보통신과',
       degree: '전문학사',
       duration: '2020.03 - 2023.02',
-      details: [
-        '2021-2022 학회장 역임',
-        "전공동아리 'CNC', '푸른꿈나무' 운영",
-        "오픈소스 프로젝트 'TomTom' 개발",
-        "졸업 프로젝트 '청각장애인을 위한 스마트 LED' 개발",
-      ],
+      details:
+        "2021-2022 학회장 역임, \n전공동아리 'CNC', '푸른꿈나무' 운영, \n오픈소스를 이용한 영수증 분석 프로젝트 'TomTom' 개발, \n졸업 프로젝트 '청각장애인을 위한 스마트 LED' 개발",
     },
   ],
   skills: {
@@ -120,7 +117,7 @@ export const resumeData: ResumeData = {
       name: 'Actas MES 중소제조업 고도화 프로젝트',
       duration: '2023.04 - 2023.08',
       description:
-        '주로 C#/C++와 MSSQL, DevExpress를 사용하여 MES의 데이터를 조회하고 시각화하는 화면을 만들었습니다. Python과 Pandas를 사용하여 데이터 시각화 경험이 있습니다.',
+        '주로 C#/C++와 MSSQL, DevExpress를 사용하여 MES의 데이터를 조회하고 시각화하는 화면을 만들었습니다. Python과 Pandas를 사용하여 데이터 시각화 경험이 있습니다. 데이터 시각화를 위해 JMP를 학습했습니다.',
       skillsUsed: ['C#/C++', 'DevExpress', 'MSSQL', 'Python', 'Pandas', 'JMP'],
     },
 
